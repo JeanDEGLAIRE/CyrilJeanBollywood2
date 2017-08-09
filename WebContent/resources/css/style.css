@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.titre{
+	font-weight: bold
+}
+
+body {
+	font-family: "verdana", Verdana, sans-serif;
+	background-color:#C48F65;
+}

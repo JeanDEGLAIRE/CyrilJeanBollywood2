@@ -9,6 +9,9 @@ import javax.faces.bean.SessionScoped;
 @SessionScoped
 public class BollywoodController {
 	
+	public BollywoodController() {
+	}
+
 	private String actor = "";
 	private String name = "";
 	private String img = "";

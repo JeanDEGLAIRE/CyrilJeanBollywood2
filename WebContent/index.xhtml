@@ -17,22 +17,24 @@
 			<br />
 			<br />
 			<h:selectOneMenu value="#{bollywoodController.actor}">
-				<f:selectItem itemValue="none" itemLabel="Choisissez votre Acteur"/>
+				<f:selectItem itemValue="none"
+					itemLabel="#{messages['action.selectActor']}" />
 				<f:selectItem itemValue="aamir" itemLabel="Aamir Khan" />
 				<f:selectItem itemValue="karishma" itemLabel="Karishma Kapoor" />
 			</h:selectOneMenu>
 
-			<h:commandButton value= "#{messages[bouton.send]}" action="actor" />
-		</h:form>
-		<br />
-			<h:commandButton value="French"
+			<h:commandButton value="#{messages['button.send']}" action="actor" />
+
+			<br />
+			<h:commandButton value="#{messages['lang.french']}"
 				action='#{languageController.changeLanguage("fr")}' />
-			<h:commandButton value="English"
+			<h:commandButton value="#{messages['lang.english']}"
 				action='#{languageController.changeLanguage("en")}' />
+		</h:form>
 		<br />
 		<h:graphicImage value="resources/img/bollywood.jpg" width="576"
 			height="447" />
-			
+
 
 	</div>
 </h:body>
